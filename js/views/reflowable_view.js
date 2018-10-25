@@ -279,10 +279,10 @@ var ReflowableView = function(options, reader){
 
         if(_$epubHtml) {
             _$epubHtml.css("column-gap", _paginationInfo.columnGap + "px");
-            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(even)', declarations: { 'width': 'auto', 'height':'99vh', 'display':'block', 'margin-left':'-' + _paginationInfo.columnGap/2 +'px'} }]);
-            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(odd)', declarations: { 'width': 'auto', 'height':'99vh', 'display':'block', 'margin-right':'-' + _paginationInfo.columnGap/2 +'px'} }]);
-            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(even) img', declarations: { 'width': 'auto', 'height':'auto', 'float':'left'} }]);
-            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(odd) img', declarations: { 'width': 'auto', 'height':'auto', 'float':'right'} }])
+            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(even)', declarations: { 'width': 'auto', 'height':'99vh', 'display':'block', 'margin-right':'-' + _paginationInfo.columnGap/2 +'px'} }]);
+            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(odd)', declarations: { 'width': 'auto', 'height':'99vh', 'display':'block', 'margin-left':'-' + _paginationInfo.columnGap/2 +'px'} }]);
+            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(even) img', declarations: { 'width': 'auto', 'height':'auto', 'float':'right'} }]);
+            ReadiumSDK.reader.setBookStyles([{ selector: '.image-wrapper:nth-child(odd) img', declarations: { 'width': 'auto', 'height':'auto', 'float':'left'} }])
         }
     }
 
